@@ -1,6 +1,13 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #f8f8f8;
+  color: #0066cc;
+  font-family: 'Arial', sans-serif;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bold;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .flex-container {
@@ -10,8 +17,8 @@ body {
   align-items: flex-start;
   padding: 20px;
   box-sizing: border-box;
-  overflow-y: scroll;
-  height: 150vh; 
+  height: 100vh; /* Adjusted height */
+  overflow-y: auto; /* Allow vertical scroll only */
 }
 
 .flex-item {
@@ -20,76 +27,21 @@ body {
   margin: 20px;
   padding: 20px;
   box-sizing: border-box;
-  border: 1px solid #ddd;
-  cursor:pointer;
-}
-
-.flex-container {
-  display: flex;
-}
-
-.flex-item {
-  flex: 1;
-  padding: 20px;
-  border: 10px solid cyan; /* Default border color */
-}
-
-/* Specify different border colors for specific boxes */
-
-
-.flex-container {
-  display: flex;
-}
-
-.flex-item {
-  flex: 1;
-  padding: 20px;
-  border: 20px solid cyan; /* Default border color and thickness */
-}
-
-
-
-html, body {
-  height: 50%;
-  margin: 0;
-  padding: 0;
-
-}
-
-body {
-  background-color: #f8f8f8;
-  color: #0066cc;
-  font-family: 'Arial', sans-serif;
-  font-size: 50px;
-  font-style: italic;
-  font-weight: bold;
-}
-
-.flex-container {
-  display: flex;
-}
-
-.flex-item {
-  flex: 1;
-  padding: 20px;
-  margin: 10px;
-  border: 10px solid #0066cc;
+  border: 10px solid #0066cc; /* Default border color */
   background-color: #000000;
   color: #ffffff;
   text-align: center;
+  cursor: pointer;
 }
-
-
 
 /* Media Query for responsiveness */
 @media screen and (max-width: 768px) {
   .flex-container {
-    flex-direction: column;
+      flex-direction: column;
   }
 
   .flex-item {
-    width: 100%;
-    box-sizing: border-box;
+      width: 100%;
+      box-sizing: border-box;
   }
 }
-
